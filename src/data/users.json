@@ -1,0 +1,37 @@
+{
+  "standardUser": {
+    "username": "standard_user",
+    "password": "secret_sauce",
+    "description": "Standard active user with full permissions"
+  },
+  "lockedOutUser": {
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "description": "User account locked due to security policy"
+  },
+  "problemUser": {
+    "username": "problem_user",
+    "password": "secret_sauce",
+    "description": "User with simulated frontend visual and data bugs"
+  },
+  "performanceGlitchUser": {
+    "username": "performance_glitch_user",
+    "password": "secret_sauce",
+    "description": "User experiencing simulated network and rendering latency"
+  },
+  "errorUser": {
+    "username": "error_user",
+    "password": "secret_sauce",
+    "description": "User account triggering internal errors on specific actions"
+  },
+  "visualUser": {
+    "username": "visual_user",
+    "password": "secret_sauce",
+    "description": "User experiencing visual regression quirks"
+  },
+  "invalidUser": {
+    "username": "non_existent_user",
+    "password": "wrong_password",
+    "description": "Invalid user credentials to test auth rejection"
+  }
+}

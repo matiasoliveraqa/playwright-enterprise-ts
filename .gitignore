@@ -1,0 +1,36 @@
+# Node dependencies
+node_modules/
+package-lock.json.bak
+
+# Playwright artifacts & reports
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Allure test results & reports
+allure-results/
+allure-report/
+
+# Environment variables
+.env
+.env.local
+!.env.example
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE / Editor artifacts
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

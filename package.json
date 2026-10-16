@@ -1,0 +1,45 @@
+{
+  "name": "playwright-enterprise-ts",
+  "version": "1.0.0",
+  "description": "Enterprise-grade Playwright E2E & API test automation framework with TypeScript, Page Object Model, and CI/CD",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project=mobile-safari --project=mobile-chrome",
+    "test:e2e": "playwright test tests/e2e --project=chromium",
+    "test:api": "playwright test tests/api --project=api",
+    "test:headed": "playwright test --headed --project=chromium",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "allure:generate": "npx allure generate allure-results --clean -o allure-report",
+    "allure:open": "npx allure open allure-report",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{ts,json}\" \"tests/**/*.{ts,json}\" \"*.ts\"",
+    "format:check": "prettier --check \"src/**/*.{ts,json}\" \"tests/**/*.{ts,json}\" \"*.ts\""
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "test-automation",
+    "e2e-testing",
+    "api-testing",
+    "page-object-model",
+    "sdet",
+    "ci-cd",
+    "allure-report"
+  ],
+  "author": "Antigravity SDET Architect",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^22.0.0",
+    "allure-playwright": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.0"
+  }
+}
