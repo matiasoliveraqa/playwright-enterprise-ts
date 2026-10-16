@@ -32,7 +32,7 @@
     "ci-cd",
     "allure-report"
   ],
-  "author": "Antigravity SDET Architect",
+  "author": "Matías Olivera <matiluzardo3@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@playwright/test": "^1.64.1",
