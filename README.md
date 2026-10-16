@@ -1,6 +1,6 @@
 # 🎭 Playwright Enterprise TypeScript Automation Framework
 
-[![CI Pipeline](https://github.com/company/playwright-enterprise-ts/actions/workflows/e2e-tests.yml/badge.svg)](https://github.com/company/playwright-enterprise-ts/actions/workflows/e2e-tests.yml)
+[![CI Pipeline](https://github.com/matiasoliveraqa/playwright-enterprise-ts/actions/workflows/e2e-tests.yml/badge.svg)](https://github.com/matiasoliveraqa/playwright-enterprise-ts/actions/workflows/e2e-tests.yml)
 [![Playwright Version](https://img.shields.io/badge/playwright-v1.64.1-2EAD33.svg?logo=playwright)](https://playwright.dev/)
 [![TypeScript](https://img.shields.io/badge/typescript-v5.6+-blue.svg?logo=typescript)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/node-v20%20|%20v22%20|%20v24-brightgreen.svg?logo=node.js)](https://nodejs.org/)
@@ -157,7 +157,7 @@ playwright-enterprise-ts/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/company/playwright-enterprise-ts.git
+   git clone https://github.com/matiasoliveraqa/playwright-enterprise-ts.git
    cd playwright-enterprise-ts
    ```
 
@@ -337,6 +337,14 @@ Validate strict TypeScript typing:
 ```bash
 npm run typecheck
 ```
+
+---
+
+## 👤 Author
+**Matías Olivera** — *Senior QA Engineer & SDET*  
+- **GitHub**: [@matiasoliveraqa](https://github.com/matiasoliveraqa)  
+- **LinkedIn**: [linkedin.com/in/matiolivera](https://www.linkedin.com/in/matiolivera/)  
+- **Email**: [matiluzardo3@gmail.com](mailto:matiluzardo3@gmail.com)
 
 ---
 
