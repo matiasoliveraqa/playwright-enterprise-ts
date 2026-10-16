@@ -12,6 +12,7 @@
     "test:e2e": "playwright test tests/e2e --project=chromium",
     "test:api": "playwright test tests/api --project=api",
     "test:headed": "playwright test --headed --project=chromium",
+    "test:headed:slow": "SLOWMO=700 playwright test tests/e2e/checkout.spec.ts --headed --workers=1 --project=chromium",
     "test:ui": "playwright test --ui",
     "test:debug": "playwright test --debug",
     "report": "playwright show-report",

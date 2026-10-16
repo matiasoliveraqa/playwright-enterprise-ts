@@ -47,6 +47,9 @@ export default defineConfig({
     headless: process.env.HEADLESS !== 'false',
     viewport: { width: 1280, height: 720 },
     ignoreHTTPSErrors: true,
+    launchOptions: {
+      slowMo: process.env.SLOWMO ? parseInt(process.env.SLOWMO, 10) : 0,
+    },
   },
 
   projects: [
