@@ -270,7 +270,7 @@ npx playwright show-trace test-results/<test-run-folder>/trace.zip
 ## 💡 Design Patterns & SDET Best Practices
 
 ### 1. Clean Page Object Model (POM)
-Each webpage is represented as a distinct TypeScript class extending [`BasePage`](file:///home/kraper/Projects/playwright-enterprise-ts/src/pages/BasePage.ts). Locators and actions are strictly encapsulated:
+Each webpage is represented as a distinct TypeScript class extending [`BasePage`](src/pages/BasePage.ts). Locators and actions are strictly encapsulated:
 ```typescript
 // Test code reads like a user story, not raw DOM queries
 await inventoryPage.addItemToCart('Sauce Labs Backpack');
@@ -281,7 +281,7 @@ await checkoutPage.finishCheckout();
 ```
 
 ### 2. Custom Fixtures & Dependency Injection
-Page objects are automatically created and provided through Playwright's fixture system via [`src/fixtures/testBase.ts`](file:///home/kraper/Projects/playwright-enterprise-ts/src/fixtures/testBase.ts).
+Page objects are automatically created and provided through Playwright's fixture system via [`src/fixtures/testBase.ts`](src/fixtures/testBase.ts).
 - No manual `new LoginPage(page)` instantiations in test files.
 - Reusable `loggedInPage` fixture auto-authenticates before test steps and tears down cleanly.
 
@@ -310,7 +310,7 @@ expect(actualTotal).toBe(parseFloat((actualSubtotal + actualTax).toFixed(2)));
 
 ## 🔄 CI/CD Automation
 
-This repository includes a production-ready GitHub Actions workflow in [`.github/workflows/e2e-tests.yml`](file:///home/kraper/Projects/playwright-enterprise-ts/.github/workflows/e2e-tests.yml):
+This repository includes a production-ready GitHub Actions workflow in [`.github/workflows/e2e-tests.yml`](.github/workflows/e2e-tests.yml):
 
 - **Triggers**: On every `push` and `pull_request` against `main` or `master`, as well as on-demand via `workflow_dispatch`.
 - **Parallel Execution**: Automatic parallel worker allocation for optimal build times.
